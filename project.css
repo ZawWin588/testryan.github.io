@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+}
+
+.sidebar{
+  list-style-type: none;
+  width: 25%;
+  background-color: #607d8b;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar li a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+
+.sidebar li a.active{
+  background-color: #009688;
+}
+
+@media screen and (max-width: 900px;){
+  .sidebar{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar li a{
+    float: left;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width:400px;){
+  .sidebar li a{
+    text-align: center;
+    float: none;
+  }
+}
